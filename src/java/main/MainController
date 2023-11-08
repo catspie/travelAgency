@@ -1,0 +1,13 @@
+package main;
+
+@Controller
+public class MainController {
+    /*
+     * 로그인 화면으로 이동
+     */
+    @RequestMapping(value = "/main/index.do")
+    public String index() throws Exception {
+
+        return "index";
+    }
+}
