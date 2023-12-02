@@ -11,6 +11,12 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			.video{
+			    display: grid;
+			}
+		</style>
+		<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 	</head>
 	<body class="is-preload">
 
@@ -21,7 +27,7 @@
 					<header id="header" class="alt">
 						<span class="logo"><img src="images/logo.svg" alt="" /></span>
 						<h1>Chamitour</h1>
-						<p>비즈니스 여행 전문 여행사</p>
+						<p>A journey we make together</p>
 					</header>
 
 				<!-- Nav -->
@@ -42,10 +48,20 @@
 								<div class="spotlight">
 									<div class="content">
 										<header class="major">
-											<h2>MOUNTAIN</h2>
+											<h2>TRAVLE</h2>
 										</header>
 									</div>
-									<span class="image"><img src="images/pic01.jpg" alt="" /></span>
+									<span class="video">
+										<video muted autoplay controls width="620">
+											<source id="video1" src="images/mountains(540p).mp4" alt="" type="video/mp4"/>
+										</video>
+										<video controls width="620">
+											<source id="video2" src="images/swimming(540p).mp4" alt="" type="video/mp4"/>
+										</video>
+										<video controls width="620">
+											<source id="video3" src="images/golf_court(360p).mp4" alt="" type="video/mp4"/>
+										</video>
+									</span>
 								</div>
 							</section>
 
