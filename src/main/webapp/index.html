@@ -1,188 +1,157 @@
-<!DOCTYPE HTML>
-<!--
-	Stellar by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Stellar by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<style>
-			.video{
-			    display: grid;
-			}
-		</style>
-		<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+<head>
+    <title>Zoom WebSDK CDN</title>
+    <meta charset="utf-8" />
+    <link type="text/css" rel="stylesheet" href="https://source.zoom.us/2.18.2/css/bootstrap.css" />
+    <link type="text/css" rel="stylesheet" href="https://source.zoom.us/2.18.2/css/react-select.css" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-				<!-- Header -->
-					<header id="header" class="alt">
-						<span class="logo"><img src="images/logo.svg" alt="" /></span>
-						<h1>Chamitour</h1>
-						<p>A journey we make together</p>
-					</header>
+</head>
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul>
-							<li><a href="#intro" class="active">Introduction</a></li>
-							<li><a href="#first">First Section</a></li>
-							<li><a href="#second">Second Section</a></li>
-							<li><a href="#cta">Get Started</a></li>
-						</ul>
-					</nav>
+<body>
+    <style>
+        .sdk-select {
+            height: 34px;
+            border-radius: 4px;
+        }
 
-				<!-- Main -->
-					<div id="main">
+        .websdktest button {
+            float: right;
+            margin-left: 5px;
+        }
 
-						<!-- Introduction -->
-							<section id="intro" class="main">
-								<div class="spotlight">
-									<div class="content">
-										<header class="major">
-											<h2>TRAVLE</h2>
-										</header>
-									</div>
-									<span class="video">
-										<video muted autoplay controls width="620">
-											<source id="video1" src="images/mountains(540p).mp4" alt="" type="video/mp4"/>
-										</video>
-										<video controls width="620">
-											<source id="video2" src="images/swimming(540p).mp4" alt="" type="video/mp4"/>
-										</video>
-										<video controls width="620">
-											<source id="video3" src="images/golf_court(360p).mp4" alt="" type="video/mp4"/>
-										</video>
-									</span>
-								</div>
-							</section>
+        #nav-tool {
+            margin-bottom: 0px;
+        }
 
-						<!-- Second Section -->
-							<section id="second" class="main special">
-								<header class="major">
-									<h2>SEARCH🔍</h2>
-									<p>원하시는 상품을 검색하세요.</p>
-								</header>
-								<ul class="statistics">
-									<li class="style1">
-										<span class="icon solid fa-code-branch"></span>
-										<strong>5,120</strong> Etiam
-									</li>
-									<li class="style2">
-										<span class="icon fa-folder-open"></span>
-										<strong>8,192</strong> Magna
-									</li>
-									<li class="style3">
-										<span class="icon solid fa-signal"></span>
-										<strong>2,048</strong> Tempus
-									</li>
-									<li class="style4">
-										<span class="icon solid fa-laptop"></span>
-										<strong>4,096</strong> Aliquam
-									</li>
-									<li class="style5">
-										<span class="icon fa-gem"></span>
-										<strong>1,024</strong> Nullam
-									</li>
-								</ul>
-								<footer class="major">
-									<ul class="actions special">
-										<li><a href="generic.html" class="button">찜목록으로 이동</a></li>
-									</ul>
-								</footer>
-							</section>
+        #show-test-tool {
+            position: absolute;
+            top: 100px;
+            left: 0;
+            display: block;
+            z-index: 99999;
+        }
 
-						<!-- First Section -->
-							<section id="first" class="main special">
-								<header class="major">
-									<h2>CATEGORY🗂️</h2>
-								</header>
-								<ul class="features">
-									<li>
-										<span class="icon solid major style1 fa-code"></span>
-										<h3>패키지/가족 여행</h3>
-										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
-									</li>
-									<li>
-										<span class="icon major style3 fa-copy"></span>
-										<h3>협업 가능 기업 정보</h3>
-										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
-									</li>
-									<li>
-										<span class="icon major style5 fa-gem"></span>
-										<h3>럭셔리/골프 여행</h3>
-										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
-									</li>
-								</ul>
-								<footer class="major">
-									<ul class="actions special">
-										<li><a href="generic.html" class="button">전체 검색</a></li>
-									</ul>
-								</footer>
-							</section>
+        #display_name {
+            width: 250px;
+        }
 
-						<!-- Get Started -->
-							<section id="cta" class="main special">
-								<header class="major">
-									<h2>CONTACT📞</h2>
-									<p>궁금한 점이 있으시다면 연락주세요.</p>
-								</header>
-								<footer class="major">
-									<ul class="actions special">
-										<li><a href="generic.html" class="button primary">챗봇 연결</a></li>
-										<li><a href="generic.html" class="button">직접 상담</a></li>
-									</ul>
-								</footer>
-							</section>
 
-					</div>
+        #websdk-iframe {
+            width: 700px;
+            height: 500px;
+            border: 1px;
+            border-color: red;
+            border-style: dashed;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            left: 50%;
+            margin: 0;
+        }
+    </style>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<section>
-							<h2>Etiam feugiat</h2>
-							<dl class="alt">
-								<dt>Address</dt>
-								<dd>1234 Somewhere Road &bull; Nashville, TN 00000 &bull; USA</dd>
-								<dt>Phone</dt>
-								<dd>(000) 000-0000 x 0000</dd>
-								<dt>Email</dt>
-								<dd><a href="#">information@untitled.tld</a></dd>
-							</dl>
-							<ul class="icons">
-								<li><a href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
-								<li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
-								<li><a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li>
-							</ul>
-						</section>
-						<p class="copyright">
-							&copy;
-							사업자 번호: 000000-000009 |
-							공동 대표: 홍길동 |
-							설립일: 1999/99/99
-						</p>
-					</footer>
+    <nav id="nav-tool" class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Zoom WebSDK CDN</a>
+            </div>
+            <div id="navbar" class="websdktest">
+                <form class="navbar-form navbar-right" id="meeting_form">
+                    <div class="form-group">
+                        <input type="text" name="display_name" id="display_name" value="2.18.2#CDN" maxLength="100"
+                            placeholder="Name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="meeting_number" id="meeting_number" value="" maxLength="200"
+                            style="width:150px" placeholder="Meeting Number" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="meeting_pwd" id="meeting_pwd" value="" style="width:150px"
+                            maxLength="32" placeholder="Meeting Password" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="meeting_email" id="meeting_email" value="" style="width:150px"
+                            maxLength="32" placeholder="Email option" class="form-control">
+                    </div>
 
-			</div>
+                    <div class="form-group">
+                        <select id="meeting_role" class="sdk-select">
+                            <option value=0>Attendee</option>
+                            <option value=1>Host</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <select id="meeting_china" class="sdk-select">
+                            <option value=0>Global</option>
+                            <option value=1>China</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <select id="meeting_lang" class="sdk-select">
+                            <option value="en-US">English</option>
+                            <option value="de-DE">German Deutsch</option>
+                            <option value="es-ES">Spanish Español</option>
+                            <option value="fr-FR">French Français</option>
+                            <option value="jp-JP">Japanese 日本語</option>
+                            <option value="pt-PT">Portuguese Portuguese</option>
+                            <option value="ru-RU">Russian Русский</option>
+                            <option value="zh-CN">Chinese 简体中文</option>
+                            <option value="zh-TW">Chinese 繁体中文</option>
+                            <option value="ko-KO">Korean 한국어</option>
+                            <option value="vi-VN">Vietnamese Tiếng Việt</option>
+                            <option value="it-IT">Italian italiano</option>
+                        </select>
+                    </div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+                    <input type="hidden" value="" id="copy_link_value" />
+                    <button type="submit" class="btn btn-primary" id="join_meeting">Join</button>
+                    <button type="submit" class="btn btn-primary" id="clear_all">Clear</button>
+                    <button type="button" link="" onclick="window.copyJoinLink('#copy_join_link')"
+                        class="btn btn-primary" id="copy_join_link">Copy Direct join link</button>
 
-	</body>
+
+                </form>
+            </div>
+            <!--/.navbar-collapse -->
+        </div>
+    </nav>
+
+
+    <div id="show-test-tool">
+        <button type="submit" class="btn btn-primary" id="show-test-tool-btn"
+            title="show or hide top test tool">Show</button>
+    </div>
+    <script>
+        document.getElementById('show-test-tool-btn').addEventListener("click", function (e) {
+            var textContent = e.target.textContent;
+            if (textContent === 'Show') {
+                document.getElementById('nav-tool').style.display = 'block';
+                document.getElementById('show-test-tool-btn').textContent = 'Hide';
+            } else {
+                document.getElementById('nav-tool').style.display = 'none';
+                document.getElementById('show-test-tool-btn').textContent = 'Show';
+            }
+        })
+    </script>
+
+    <script src="https://source.zoom.us/2.18.2/lib/vendor/react.min.js"></script>
+    <script src="https://source.zoom.us/2.18.2/lib/vendor/react-dom.min.js"></script>
+    <script src="https://source.zoom.us/2.18.2/lib/vendor/redux.min.js"></script>
+    <script src="https://source.zoom.us/2.18.2/lib/vendor/redux-thunk.min.js"></script>
+    <script src="https://source.zoom.us/2.18.2/lib/vendor/lodash.min.js"></script>
+    <script src="https://source.zoom.us/zoom-meeting-2.18.2.min.js"></script>
+    <script src="js/tool.js"></script>
+    <script src="js/vconsole.min.js"></script>
+    <script src="js/index.js"></script>
+
+    <script>
+
+
+    </script>
+</body>
+
 </html>
